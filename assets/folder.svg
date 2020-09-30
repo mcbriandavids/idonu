@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="90" viewBox="0 0 100 90">
+  <g id="folder" transform="translate(-1023 -1358)">
+    <g id="Box" transform="translate(1023 1358)">
+      <rect id="Rectangle_28" data-name="Rectangle 28" width="96" height="18" transform="translate(2 7.2)" fill="none" stroke="#fcfcfc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+      <rect id="Rectangle_29" data-name="Rectangle 29" width="100" height="90" fill="none"/>
+      <path id="Path_11" data-name="Path 11" d="M4,14V73.4H96V14ZM66.433,33.8H33.567c-3.025,0-5.476-2.014-5.476-4.5s2.451-4.5,5.476-4.5H66.433c3.025,0,5.476,2.014,5.476,4.5S69.458,33.8,66.433,33.8Z" transform="translate(0 11.2)" fill="none" stroke="#fcfcfc" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

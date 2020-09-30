@@ -1,0 +1,53 @@
+@import 'config';
+@import 'menu';
+@import 'home';
+@import 'about';
+@import 'services';
+@import 'contact';
+@import 'responsive';
+
+body {
+	background: $background-color;
+	color: set-text-color($primary-color);
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1;
+}
+h1,
+h2 {
+	font-weight: 400;
+}
+a {
+	color: $text-secondary-color;
+	text-decoration: none;
+}
+header {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	padding: 1rem;
+	background: $secondary-color;
+}
+main {
+	height: 100%;
+	width: 100%;
+}
+.home-tool > div {
+	padding: 0.4rem;
+	@include transition-ease;
+
+	&:hover {
+		color: $accent-color;
+	}
+}
+.main-footer {
+	width: 100%;
+	height: 15vh;
+	font-size: 1rem;
+	color: $text-secondary-color;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	padding: 2rem;
+	background: $secondary-color;
+}

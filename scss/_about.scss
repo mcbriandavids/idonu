@@ -1,0 +1,97 @@
+.about-us {
+	display: grid;
+	grid-template-columns: 80px 1fr 80px;
+	line-height: 1.6;
+
+	& > * {
+		grid-column: 2;
+		min-width: 0;
+	}
+	&-title {
+		color: $accent-color;
+		font-size: 1.8rem;
+		text-transform: capitalize;
+	}
+	.about-content {
+		display: flex;
+		color: $secondary-color;
+		text-align: justify;
+
+		& img {
+			flex-grow: 1;
+			max-height: 80vh;
+			min-width: 40vw;
+			@include transition-ease;
+		}
+	}
+
+	// Card-section
+
+	.card {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 280px);
+		gap: 0.5rem;
+
+		& div {
+			background: $dark-color;
+			color: set-text-color($primary-color);
+			border-radius: 10px;
+			text-align: center;
+			margin-bottom: 1rem;
+			@include transition-ease;
+		}
+		& p {
+			padding: 1rem;
+			text-align: justify;
+		}
+		& img {
+			width: 5vw;
+			padding-top: 1rem;
+			@include transition-ease;
+		}
+	}
+}
+
+.client {
+	height: 20vh;
+	background: $dark-color;
+	position: relative;
+	bottom: auto;
+
+	&-title {
+		text-align: center;
+		font-size: 2rem;
+		color: $accent-color;
+		text-transform: uppercase;
+	}
+	&-images {
+		display: flex;
+		justify-content: center;
+
+		& img {
+			height: 6vh;
+			padding-right: 1rem;
+			@include transition-ease;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.about-us {
+		.about-content {
+			display: flex;
+			flex-direction: column;
+		}
+		.card {
+			display: flex;
+			flex-direction: column;
+			height: auto;
+		}
+	}
+	.client {
+		& img {
+			height: 1.8rem;
+		}
+	}
+}

@@ -1,0 +1,62 @@
+$primary-color: #222a36;
+$secondary-color: #000;
+$background-color: #e5e5e5;
+$text-secondary-color: #fff;
+$dark-color: #222a36;
+$accent-color: #17a2b8;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+@mixin transition-ease {
+	transition: all 0.8s ease-in-out;
+}
+
+@function set-text-color($color) {
+	@if (lightness($color) > 40%) {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
+}
+
+// Margin & Padding
+$space-amounts: (1, 2, 3, 4, 5);
+@each $space in $space-amounts {
+	// All around margin
+	.m-#{$space} {
+		margin: #{$space}rem;
+	}
+	// Vertical Margin
+	.my-#{$space} {
+		margin: #{$space}rem 0;
+	}
+	// All round Padding
+	.p-#{$space} {
+		padding: #{$space}rem 0;
+		// Vertical Padding
+	}
+	.py-#{$space} {
+		padding: #{$space}rem 0;
+	}
+}
+
+@mixin media-md {
+	@media screen and (min-width: 750px) {
+		@content;
+	}
+}
+
+@mixin media-lg {
+	@media screen and (min-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin media-xl {
+	@media screen and (min-width: 1600px) {
+		@content;
+	}
+}
